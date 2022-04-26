@@ -1,0 +1,71 @@
+@import "bootstrap/bootstrap.scss";
+
+/******Generales********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********VARIABLES*****************/
+$fondo: rgb(226, 224, 224);
+
+body{
+    background-color: $fondo;
+}
+h1{
+    text-align: center;
+    padding: 30px 10px 10px 20px;
+    text-decoration: underline;
+    margin-top: 30px;
+ }
+ h2{
+     text-align: center;
+    padding: 10px 10px;
+ }
+ .menu{
+        background-color: rgb(235, 178, 164);
+}
+
+
+.img{
+        padding-left: 70%;
+}
+
+
+.text{
+        text-align: justify;
+}
+
+/***********************ANIMACIONES*****************/
+.texAnUno{
+    animation-name: textoUno;
+    animation-duration: 2s;
+}
+@keyframes textoUno{
+    from{
+        transform: translate(500px);
+        opacity: 1;
+    }
+    to{
+        transform: translate(0);
+    }
+}
+.texAnDos{
+    animation-name: textoDos;
+    animation-duration: 2s;
+}
+@keyframes textoDos{
+    from{
+        transform: translate(-500px);
+        opacity: 1;
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+
+
+
+

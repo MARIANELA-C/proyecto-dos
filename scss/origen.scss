@@ -50,6 +50,19 @@ text-align: $justificado;
     @include texto(justify, rgb(41, 2, 2));
 }
 /************************MAPA***********************/
+$mapa:(
+    contacto: rgb(253, 127, 127),
+    galeria: rgb(250, 200, 107),
+    productos: rgb(247, 247, 115),
+    seminarios: rgb(252, 188, 252),
+    tutoriales: rgb(255, 101, 147)
+);
+/**********************LISTA***********************/
+@each $paginas, $menu in $mapa{
+    .fondoMenu-#{$paginas}{
+        background-color: $menu;
+    }
+}
 
 /***********************ANIMACIONES*****************/
 .texAnUno{

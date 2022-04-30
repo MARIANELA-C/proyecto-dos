@@ -13,6 +13,8 @@ $fondo: rgb(226, 224, 224);
 body{
     background-color: $fondo;
 }
+
+
 h1{
     text-align: center;
     padding: 30px 10px 10px 20px;
@@ -23,6 +25,8 @@ h1{
      text-align: center;
     padding: 10px 10px;
  }
+
+ /****CLASES*****/
  .menu{
         background-color: rgb(235, 178, 164);
 }
@@ -32,11 +36,19 @@ h1{
         padding-left: 70%;
 }
 
-
-.text{
-        text-align: justify;
+/*********************EXTEND****************/
+.primerTitulo{
+    @extend h1;
+    padding-top: 40px;
 }
-
+/******************** MIXIN*******************/
+@mixin texto($justificado, $colortext) {//se aplico sobre parrafos
+text-align: $justificado;
+   color: $colortext;
+}
+.text{
+    @include texto(justify, rgb(41, 2, 2));
+}
 /***********************ANIMACIONES*****************/
 .texAnUno{
     animation-name: textoUno;
@@ -64,6 +76,7 @@ h1{
         transform: translate(0);
     }
 }
+
 
 
 

@@ -49,6 +49,8 @@ text-align: $justificado;
 .text{
     @include texto(justify, rgb(41, 2, 2));
 }
+/************************MAPA***********************/
+
 /***********************ANIMACIONES*****************/
 .texAnUno{
     animation-name: textoUno;
